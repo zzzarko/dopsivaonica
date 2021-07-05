@@ -1,0 +1,24 @@
+@import '../../../styles/variables.scss';
+
+
+
+h2 {
+    color:$secondary;
+    margin-bottom: 1em;
+}
+
+.form-wrapper {
+    min-width: 40%;
+    margin-bottom: 10%;
+    border: 2px solid $light-grey;
+    padding: 1em 2em;
+}
+
+.e-mail{
+    margin-bottom: 0.5em;
+}
+
+.password{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}

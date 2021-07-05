@@ -1,0 +1,41 @@
+@import "../../../../../styles/variables.scss";
+
+.chatroom-list {
+    margin-left: 15px;
+    border-right: epx solid $light-grey;
+    overflow-y: scroll ;
+
+    .chatroom-list-item {
+        border-bottom: 2px solid $light-grey;
+        padding: 1em;
+        border-radius: 10px;
+        margin-left: 10px;
+
+        a {
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            font-weight: bold;
+            color: green;
+            &::after {
+              content: "";
+              background: rgba(#ffff00, 0.25);
+              position: absolute;
+              left: 12px;
+              bottom: -6px;
+              width: calc(100% - 8px);
+              height: calc(100% - 8px);
+              z-index: -1;
+              transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+            }
+            &:hover:after {
+              left: 0;
+              bottom: -2px;
+              width: 100%;
+              height: 100%;
+            }
+          }
+    }
+   
+}
+ 

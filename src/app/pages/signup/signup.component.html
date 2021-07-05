@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="container-wrapper container d-flex justify-content-center align-items-center">
+    <div class="form-wrapper text-center">
+        <img src="../../../assets/images/logo.png"/>
+        <h2 class="text-center">Registracija</h2>
+        <form [formGroup]="signupForm" (submit)="submit()" novalidate>
+            <div class="name-wrapper d-flex">
+               
+                <div class="form-group first-name">
+                    <input type="text" class="form-control" id="first-name-input" placeholder="Ime" formControlName="firstName">
+                </div>
+                
+                <div class="form-group last-name">
+                    <input type="text" class="form-control" id="last-name-input" placeholder="Prezime" formControlName="lastName">
+                </div>
+            
+
+            </div>
+            
+
+            <div class="form-group e-mail">
+                <input type="email" class="form-control" id="email-input" placeholder="Elektronska adresa" formControlName="email">
+            </div>
+
+            <div class="form-group password">
+                <input type="password" class="form-control" id="password-input" placeholder="Šifra" formControlName="password">
+            </div>
+
+            <button type="submit" class="btn btn-success" [disabled]="!signupForm.valid">Registruj se</button>
+
+        </form>
+        <small><a routerLink="/login">Već imaš nalog?</a></small>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="container-wrapper container d-flex justify-content-center align-items-center"> 
+    <div class="form-wrapper text-center">
+        <img src="../../../assets/images/logo.png"/>
+        <h2 class="text-center">Prijava</h2>
+        <form [formGroup]="loginForm" (submit)="submit()">
+
+            
+
+            <div class="form-group e-mail">
+                <input type="email" class="form-control" id="email-input" placeholder="Elektronska adresa" formControlName="email" >
+            </div>
+
+            <div class="form-group password">
+                <input type="password" class="form-control" id="password-input" placeholder="Šifra" formControlName="password">
+            </div>
+
+            <button type="submit" class="btn btn-success">Prijavi se</button>
+
+        </form>
+        <small><a routerLink="/signup">Još uvek nemaš nalog? Napravi!</a></small>
+    </div>
+</div>

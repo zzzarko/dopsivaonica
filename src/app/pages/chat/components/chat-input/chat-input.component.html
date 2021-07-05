@@ -1,0 +1,9 @@
+<div class="new-message-wrapper d-flex">
+  <div class="input-group">
+    <input [(ngModel)]="newMessageText" type="text" class="form-control" placeholder="Napiši poruku" (keyup.enter)="submit(newMessage.value)" #newMessage>
+    <div class="input-group-append">
+      <button class="btn btn-outline-success" type="button" (click)="submit(newMessage.value)">Pošalji</button>
+      </div>
+
+  </div>
+</div>
