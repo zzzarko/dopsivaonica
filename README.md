@@ -1,4 +1,5 @@
 # ChatApp
 
-School project.
-Course: Advanced Web Programming
+Faculty project.
+Course: Advanced Web Programming.
+
